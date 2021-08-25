@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(/font/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+body {
+    background: black;
+    height: 100vh;
+    max-width: 1366px;
+    font-family: "Roboto Mono";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista {
+    background: whitesmoke;
+    width: 500px;
+    padding: 20px 40px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px snow;
+}
+h2 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.formulario {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 8px;
+}
+
+#agrTarea {
+    background: whitesmoke;
+    margin-right: 10px;
+    border-style: none;
+    border-bottom: 2px solid black;
+
+    transition: .15s;
+}
+#agrTarea:focus {
+    outline: none;
+    border-style: none;
+    border-bottom: 2px solid tomato;
+}
+
+
+#agregar {
+    background: tomato;
+    padding: 8px 16px;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+#agregar:active {
+    background: whitesmoke;
+    color: tomato;
+    outline: 1px solid tomato;
+}
+
+/* style lista agregar borrar */
+
+#lista {
+    list-style-type: none;
+    margin-top: 20px;
+}
+li {
+    position: relative;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.borrar {
+    background: transparent;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    display: inline-block;
+}
+.borrar:hover {
+    background: tomato;
+    color: white;
+    cursor: pointer;
+}
